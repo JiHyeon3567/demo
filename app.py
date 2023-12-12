@@ -4,7 +4,7 @@ import pandas as pd
 # Cache our data
 @st.cache_data()
 def load_df():
-    df = pd.read_csv("titanic.csv")
+    df = pd.read_csv("titanic.csv") # 데이터 경로 알맞게 변경하시오
 
     # 생존 여부
     survival_options = df.Survived.unique()
